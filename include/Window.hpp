@@ -1,6 +1,7 @@
 #ifndef WINDOW_HPP
 #define WINDOW_HPP
 
+#include <iostream>
 #include "World.hpp"
 #include "Tabs/Tab.hpp"
 

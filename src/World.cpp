@@ -23,7 +23,7 @@ namespace Conway {
                     newGrid[i] = true;
             }
         }
-
+       
         for (int i = 0; i < gridLength; i++) {
 
             if (newGrid[i]) {
@@ -34,7 +34,7 @@ namespace Conway {
                 grid[i].kill();
             }
         }
-    }
+    } 
 
     /**
      * @brief Draw Grid onto Screen
@@ -165,8 +165,8 @@ namespace Conway {
      * @return true | false 
      */
     bool World::is_alive(int x, int y) {
-        if (x >= 0 && x < WORLD_DIM) {
-            if (y >= 0 && y < WORLD_DIM) {
+        if (x >= 0 && x < WORLD_DIM-1) {
+            if (y >= 0 && y < WORLD_DIM-1) {
                 int index = get_index(x, y);
                 return grid[index].is_alive();
             }
